@@ -1,0 +1,132 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+a,
+p {
+  font-size: 20px;
+}
+h1 {
+  color: #ff6e0c;
+  font-size: 60px;
+}
+
+.spotify-logo-container {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.spotify-logo-container > img {
+  margin-right: 10px;
+}
+
+.spotify-link {
+  display: block;
+  padding: 30px;
+  padding-top: 0px;
+}
+.spotify-link:hover {
+  color: #ff6e0c;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 50px;
+}
+
+.footer-container > li {
+  margin-right: 18px;
+}
+.footer-container > li:hover a {
+  color: #ff6e0c;
+}
+
+.coffees-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "item-1 item-2 item-3"
+    " item-4 item-5 item-6"
+    "item-7 item-8 item-9";
+  gap: 20px;
+  padding: 20px;
+}
+
+.item-1 {
+  grid-area: item-1;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+.item-3 {
+  grid-area: item-3;
+}
+.item-4 {
+  grid-area: item-4;
+}
+.item-5 {
+  grid-area: item-5;
+}
+.item-6 {
+  grid-area: item-6;
+}
+.item-7 {
+  grid-area: item-7;
+}
+.item-8 {
+  grid-area: item-8;
+}
+.item-9 {
+  grid-area: item-9;
+}
+
+.coffee {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.coffee:hover {
+  background-color: lightpink;
+}
+
+.coffee:hover img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.coffee > img {
+  display: block;
+  margin: 0 auto;
+  max-height: 212px;
+  max-width: 212px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+.coffee > p {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #db0a81;
+  background-color: #db0a81;
+  width: 244px;
+  color: white;
+  font-weight: bold;
+}
