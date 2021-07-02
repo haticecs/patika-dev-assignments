@@ -1,0 +1,64 @@
+/*Main Resets*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrap {
+  text-align: center;
+  margin: 10px 80px;
+}
+
+.search-section {
+  background-color: #eeeeee;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+button {
+  margin: 0 2px;
+}
+
+nav {
+  display: flex;
+}
+
+.special-searches-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7ee5da;
+  width: 37%;
+  margin-right: 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #70ccc2;
+  width: 26%;
+  margin-right: 2px;
+}
+.subscription-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #62b3aa;
+  width: 37%;
+}
+
+footer > a,
+.subscription-section > p {
+  font-size: 13px;
+}
+
+.rights {
+  margin-top: 20px;
+  font-size: 12px;
+}
